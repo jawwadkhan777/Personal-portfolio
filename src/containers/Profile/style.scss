@@ -1,5 +1,5 @@
 .Profile {
-  position: relative;
+  position: reltive;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -10,33 +10,34 @@
     // display: flex;
     justify-content: center;
     margin-left: 10rem;
+    margin-right: 10rem;
     // flex-direction: column;
-    h1{
-        color: var(--gold-theme-text-color);
-        margin: 0px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bold;
-        font-size: 6rem;
-        word-spacing: -4px;
-        line-height: 8rem;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        // animation: typingEffectOnh1 3s steps(20, end);
-        animation: typingEffectOnh1 3s linear
+    h1 {
+      color: var(--gold-theme-text-color);
+      margin: 0px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      font-size: 6rem;
+      word-spacing: -4px;
+      line-height: 8rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      // animation: typingEffectOnh1 3s steps(20, end);
+      animation: typingEffectOnh1 3s linear;
     }
     p {
-        color: var(--theme-sub-text-color);
-        margin-top: 15px;
-        margin-bottom: 25px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 3rem;
-        word-spacing: -4px;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        // animation: typingEffectOnh1 3s steps(20, end);
-        animation: typingEffectOnh1 3s linear;
+      color: var(--theme-sub-text-color);
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 3rem;
+      word-spacing: -4px;
+      position: relative;
+      overflow: hidden;
+    //   white-space: nowrap;
+      // animation: typingEffectOnh1 3s steps(20, end);
+    //   animation: typingEffectOnh1 3s linear;
     }
   }
 
@@ -46,63 +47,68 @@
     margin-top: 30px;
     // align-content: center;
     button {
-        color: var(--gold-theme-text-color);
-        cursor: pointer;
-        padding: 10px 70px;
-        font-size: 2rem;
-        // font-weight: 500;
-        font-family: 'Courier New', Courier, monospace;
-        border: 1.5px solid var(--gold-theme-text-color);
-        border-radius: 5px;
-        background: transparent;
-        &:hover {
-            background-color: var(--gold-theme-text-color);
-            color: var(--gray-theme-background-color);
-        }
+      color: var(--gold-theme-text-color);
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      // font-weight: 500;
+      font-family: "Courier New", Courier, monospace;
+      border: 1.5px solid var(--gold-theme-text-color);
+      border-radius: 5px;
+      background: transparent;
+      &:hover {
+        background-color: var(--gold-theme-text-color);
+        color: var(--gray-theme-background-color);
+      }
     }
   }
 }
 
-
 @media only screen and (max-width: 640px) {
-    .Profile_text-wrap{
-        margin-left: 3rem;
-    }
-    .Profile_text-wrap h1 {
-        font-size: 3rem;
-        line-height: 5rem;
-        
-    }
-    .Profile_text-wrap p {
-        font-size: 1.3rem;
-    }
+  .Profile_text-wrap {
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+  .Profile_text-wrap h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .Profile_text-wrap p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 870px) {
-    .Profile_text-wrap{
-        margin-left: 5rem;
-    }
-    .Profile_text-wrap h1 {
-        font-size: 3.5rem;
-        line-height: 5.5rem;
-    }
-    .Profile_text-wrap p {
-        font-size: 1.5rem;
-    }
+  .Profile_text-wrap {
+    margin-left: 5rem;
+  }
+  .Profile_text-wrap h1 {
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+  }
+  .Profile_text-wrap p {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width: 870px) and (max-width: 1040px) {
-    .Profile_text-wrap{
-        margin-left: 7rem;
-    }
-    .Profile_text-wrap h1 {
-        font-size: 4.5rem;
-        line-height: 6.5rem;
-    }
-    .Profile_text-wrap p {
-        font-size: 2rem;
-    }
+  .Profile_text-wrap {
+    margin-left: 7rem;
+  }
+  .Profile_text-wrap h1 {
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+  .Profile_text-wrap p {
+    font-size: 2rem;
+  }
 }
 
 @keyframes typingEffectOnh1 {
-    from {width: 0;}
-    to {width: 100%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
