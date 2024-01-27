@@ -1,0 +1,84 @@
+.Contact {
+  &_container {
+    padding: 20px;
+    h3 {
+      color: var(--gold-theme-text-color);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 2.5rem;
+      // line-height: 1.5;
+      // padding-top: 20px;
+      border-bottom: 2px dashed var(--gold-theme-text-color);
+      display: inline-block;
+      position: relative;
+    }
+
+    &_formWrap {
+      margin-top: 50px;
+      &_inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 20px;
+
+        div {
+          position: relative;
+
+          .nameInput,
+          .emailInput,
+          .messageInput {
+            width: 100%;
+            background: transparent;
+            // position: relative;
+            border: 2px solid var(--gold-theme-text-color);
+            // font-size: 20px;
+            padding: 15px 10px;
+            color: var(--theme-sub-text-color);
+            // transition: all 0.5s ease;
+          }
+          .nameLable,
+          .emailLable,
+          .messageLable {
+            color: var(--theme-sub-text-color);
+            // font-weight: 500;
+            position: absolute;
+            // transition: all 0.2s ease;
+            top: 7px;
+            left: 12px;
+            font-size: 15px;
+          }
+          .nameInput:focus + .nameLable,
+          .nameInput:valid + .nameLable,
+          .emailInput:focus + .emailLable,
+          .emailInput:valid + .emailLable,
+          .messageInput:focus + .messageLable,
+          .messageInput:valid + .messageLable {
+            font-size: 18px;
+            left: 0%;
+            top: -23px;
+          }
+        }
+      }
+
+      button {
+        cursor: pointer;
+        background: transparent;
+        color: var(--gold-theme-text-color);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 2rem;
+        border: 1.5px solid var(--gold-theme-text-color);
+        border-radius: 5px;
+        padding: 10px 50px;
+        &:hover {
+          background: var(--gold-theme-text-color);
+          color: var(--gray-theme-background-color);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Contact_container_formWrap_inputs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

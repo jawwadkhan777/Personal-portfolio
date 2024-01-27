@@ -1,0 +1,97 @@
+
+
+.Navbar {
+    background-color: var(--gold-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0px 20px;
+        flex: 1;
+
+        &_logo {
+            color: var(--gray-theme-background-color);
+            cursor: pointer;
+        }
+
+        &_menu {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            display: flex;
+            list-style: none;
+            text-align: center;
+
+            &_item {
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.5s ease;
+                }
+                &:hover::after {
+                    width: 100%;
+                    background: var(--gray-theme-background-color);
+                }
+
+                &_links {
+                    color: var(--gray-theme-background-color);
+                    text-decoration: none;
+                    padding: 0.5rem;
+                }
+            }
+            
+        }
+    }
+}
+
+.Nav_icon {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .Navbar_container_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 1s ease;
+        &.active {
+            background: var(--gold-theme-nav-background-color);
+            left: 0%;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        &_item {
+            // border-bottom: 3px solid #fff;
+            margin: 0px;
+            padding: 20px 0px;
+        }
+    }
+
+    .Nav_icon {
+        display: block;
+        cursor: pointer;
+        color: var(--gray-theme-background-color);
+        padding: 20px;
+    }
+    
+}

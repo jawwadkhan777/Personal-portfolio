@@ -1,0 +1,20 @@
+
+
+.HeaderContent {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed var(--gold-theme-text-color);
+    h2 {
+        color: var(--gold-theme-text-color);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 36px;
+        // line-height: 1rem;
+        text-transform: uppercase;
+        // display: flex;
+        flex-grow: 1;
+    }
+    span {
+        color: var(--gold-theme-text-color);
+    }
+}
