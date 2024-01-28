@@ -29,7 +29,7 @@ export const resumeData = {
     },
     {
       title: "Matric",
-      institute: "Baitul Ilm Secondary Schoo;",
+      institute: "Baitul Ilm Secondary School",
       description: "From 2017 to 2019, achieved A-1/85.2%",
     },
   ],
